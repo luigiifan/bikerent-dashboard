@@ -52,8 +52,8 @@ st.subheader("🌎 Pengaruh Cuaca terhadap Penyewaan Sepeda")
 weather_counts = filtered_df.groupby("weathersit")["cnt"].sum().reset_index()
 st.markdown(
     f"""
-    <div style="background-color: black; padding: 20px; border-radius: 10px;">
-        <h4 style="color: #333;">Total Penyewaan Berdasarkan Cuaca:</h4>
+    <div style="background-color: #f4f4f4; padding: 20px; border-radius: 10px;">
+        <h4 style="color: black;">Total Penyewaan Berdasarkan Cuaca:</h4>
         <ul style="list-style-type: none; padding-left: 0;">
             <li><b>☀️ Baik (Cerah) --> </b> {weather_counts[weather_counts['weathersit'] == 'Baik']['cnt'].values[0]:,.0f} sepeda</li>
             <li><b>⛅ Sedang (Berawan) --> </b> {weather_counts[weather_counts['weathersit'] == 'Sedang']['cnt'].values[0]:,.0f} sepeda</li>
