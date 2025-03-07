@@ -70,7 +70,7 @@ sns.scatterplot(data=filtered_df, x='atemp', y='cnt', hue='workingday', alpha=0.
 ax.set_xlabel("Suhu yang Dirasakan")
 ax.set_ylabel("Jumlah Penyewaan Sepeda")
 ax.set_title("Korelasi Suhu vs Penyewaan")
-ax.legend(title="Hari Kerja", labels=["Akhir Pekan", "Hari Kerja"], color=["green", "red"])
+ax.legend(title="Hari Kerja", labels=["Akhir Pekan", "Hari Kerja"])
 st.pyplot(fig)
 
 st.subheader("✨ Tren Penyewaan Sepeda dalam Rentang Bulan yang Dipilih")
