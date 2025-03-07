@@ -69,7 +69,7 @@ fig, ax = plt.subplots()
 sns.scatterplot(data=filtered_df, x='atemp', y='cnt', hue='workingday', alpha=0.5, ax=ax, palette={0: "red", 1: "green"})
 ax.set_xlabel("Suhu yang Dirasakan")
 ax.set_ylabel("Jumlah Penyewaan Sepeda")
-ax.set_title("Korelasi Suhu vs Penyewaan (Hari Kerja vs Akhir Pekan)")
+ax.set_title("Korelasi Suhu vs Penyewaan")
 ax.legend(title="Hari Kerja", labels=["Akhir Pekan", "Hari Kerja"])
 st.pyplot(fig)
 
