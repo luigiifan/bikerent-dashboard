@@ -29,7 +29,7 @@ col1, col2 = st.columns(2)
 with col1:
     st.metric(label="Total Penyewaan Sepeda", value=f"{total_rentals:,.0f} 🚲")
 with col2:
-    st.metric(label="Rata-rata Penyewaan per Hari", value=f"{average_rentals:,.0f} 🚲")
+    st.metric(label="Rata-rata Penyewaan per Hari", value=f"{average_rentals:,.0f} 👥")
 
 st.subheader("📌 Distribusi Jumlah Sewa Sepeda")
 workingday_counts = filtered_df.groupby("workingday")['cnt'].sum()
