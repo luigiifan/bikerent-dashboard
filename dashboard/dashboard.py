@@ -5,7 +5,7 @@ import streamlit as st
 from babel.numbers import format_currency
 sns.set(style='white')
 
-df = pd.read_csv('main_data.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/luigiifan/bikerent-dashboard/main/dashboard/main_data.csv')
 df['dteday'] = pd.to_datetime(df['dteday'])
 df['year_month'] = df['dteday'].dt.to_period('M')
 
