@@ -79,7 +79,7 @@ fig, ax = plt.subplots(figsize=(10, 4))
 monthly_trend.plot(ax=ax, marker='o', linestyle='-', color='tab:red')
 ax.set_xlabel("Bulan")
 ax.set_ylabel("Rata-rata Penyewaan Sepeda")
-ax.set_title("Tren Penyewaan Sepeda pada Rentang yang Dipilih")
+ax.set_title("Tren Penyewaan Sepeda")
 plt.xticks(rotation=45)
 st.pyplot(fig)
 
