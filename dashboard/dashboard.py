@@ -16,7 +16,7 @@ df['weathersit'] = df['weathersit'].map(weather_labels)
 st.sidebar.header("Pilih Rentang Tanggal")
 start_date = st.sidebar.date_input("Tanggal Mulai", df['dteday'].min())
 end_date = st.sidebar.date_input("Tanggal Akhir", df['dteday'].max())
-st.sidebar.markdown("<ins>Dibuat oleh Luigi Ifan</ins>")
+st.sidebar.markdown("Dibuat oleh :blue[color] Luigi Ifan</ins>")
 
 # Filter Data
 filtered_df = df[(df['dteday'] >= pd.to_datetime(start_date)) & (df['dteday'] <= pd.to_datetime(end_date))]
