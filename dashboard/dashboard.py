@@ -84,4 +84,5 @@ plt.xticks(rotation=45)
 st.pyplot(fig)
 
 st.markdown("---")
-st.markdown("Data berasal dari **Capital Bikeshare System, Washington D.C.** tahun 2011-2012. \nDibuat oleh Luigi Ifan")
+st.markdown("Data berasal dari **Capital Bikeshare System, Washington D.C.** tahun 2011-2012.")
+st.markdown("Dibuat oleh Luigi Ifan")
